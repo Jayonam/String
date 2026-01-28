@@ -521,7 +521,7 @@ inline int StartApp(int argc, char *argv[])
     std::cin.tie(NULL);
     if (argc < 2)
     {
-        std::cerr << "Pass strings or files as arguments. \n";
+        std::cerr << "Pass files as arguments. \n";
         return -1;
     }
 
@@ -531,10 +531,6 @@ inline int StartApp(int argc, char *argv[])
         struct stat st;
         if (stat(argv[i], &st) == 0)
             total_cap += st.st_size;
-        else
-        {
-            total_cap += (size_t)std::char_traits<char>::length(argv[i]);
-        }
     }
 
     size_t ram = GetAvailableRam();
