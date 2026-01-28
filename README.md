@@ -4,11 +4,11 @@ String is a high-performance C++17 tes library engineered for high-throughput st
 
 Features:
 
-- GigaPool Architecture**: Utilizes `thread_local` memory pools and direct system calls (`mmap`/`VirtualAlloc`) to minimize allocation latency.
+- GigaPool Architecture: Utilizes `thread_local` memory pools and direct system calls (`mmap`/`VirtualAlloc`) to minimize allocation latency.
     
-- Arena Allocation**: Supports fast, contiguous memory allocation for high-frequency operations.
+- Arena Allocation: Supports fast, contiguous memory allocation for high-frequency operations.
     
-- Memory Alignment**: Strict 64-bit alignment for compatibility with vectorized instructions.
+- Memory Alignment: Strict 64-bit alignment for compatibility with vectorized instructions.
     
 
 Hardware Acceleration
