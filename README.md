@@ -29,12 +29,14 @@ Performance Benchmarks
 String Sorting (Radix vs STD):
 
 |   Scenario   |  Data Size  |  STRING (Radix)  |  STD String  |  Speedup  |
+| ------------ | ----------- | ---------------- | ------------ | --------- |
 |RAM Sort      |    236 MB   |     2.5181 s     |   5.6182 s   |   2.23x   |
 |External Merge|    709 MB   |     18.6099 s    |   21.6920 s  |   1.16x   |
 
 Memory Operations & Allocation:
 
 |   Stage   |  Payload  |  Efficiency Speedup  |
+| --------- | --------- | -------------------- |
 |Small SSO  |    55 B   |        31.26x        |
 |Small Pool |   256 B   |         2.25x        |
 |Medium Pool|    4 KB   |         1.96x        |
@@ -52,8 +54,6 @@ Comparison Operations (Strcmp)
 | Script / Shader     |       4 KB      |    6.24x    |
 | Database Page       |      16 KB      |    5.80x    |
 | L1/L2 Boundary      |     128 KB      |    3.92x    |
-
----
 
  Core Operations:
 
@@ -77,6 +77,7 @@ Validation Suite:
 The library includes a comprehensive validation suite ensuring data integrity and behavioral correctness.
 
 |  Test Category  |               Component            |  Status  |
+| --------------- | ---------------------------------- | -------- |
 |Integrity        |SSO Integrity & Address Check       |   PASS   |
 |Integrity        |Heap Data Integrity                 |   PASS   |
 |Memory           |64-bit Memory Alignment             |   PASS   |
